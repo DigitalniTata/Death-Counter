@@ -1,0 +1,98 @@
+/* **** FONTOVI *** */
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One|Roboto:300,400,700&display=swap');
+/* ***  CUSTOM PROPERTIES *** */
+:root {
+  /* Tipografija */
+  --font-headline: "Alfa Slab One";
+  --font-body: "Roboto";
+  --font-size-body: 22.62px;
+  --font-size-headline: 63.94px;
+
+  /* Boje */
+  --color-headline: #444444;
+  --color-body: #444444;
+  --color-alert: #B22222;
+  --color-button: #ffffff;
+  --color-background:;
+}
+  /* Responziv */
+@media (max-width: 768px) {
+  :root {
+    --font-size-body: 13px;
+    --font-size-headline: 41.04px;
+  }
+}
+/* **** PRIPREMA *** */
+h1, h2, h3, h4, h5, p, ul, li, a {
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+}
+.container {
+  height: 100%;
+}
+.hide {
+  display: none;
+}
+.strong {
+  font-weight: bold;
+  color: var(--color-alert);
+}
+/* *** STILOVI *** */
+#top, #main, #bottom {
+  width: 30%;
+  margin: auto;
+  text-align: center;
+}
+#top h1 {
+  margin-top: 80px;
+  margin-bottom: 44px;
+  color: var(--color-headline);
+  font-family: var(--font-headline);
+  font-size: var(--font-size-headline);
+  letter-spacing: 2px;
+}
+#top p {
+  margin: 8px 0;
+  color: var(--color-body);
+  font-family: var(--font-body);
+  font-size: var(--font-size-body);
+}
+#main {
+  margin-top: 44px;
+  margin-bottom: 44px;
+}
+#by {
+  width: 152px;
+  height: 20px;
+  padding: 2px;
+  margin-bottom: 16px;
+}
+#button {
+  width: 160px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: var(--color-alert);
+  color: var(--color-button);
+  font-weight: bold;
+  box-shadow: none;
+}
+#bottom p {
+  color: var(--color-body);
+  font-family: var(--font-body);
+  font-size: var(--font-size-body);
+}
+#bottom p:first-child {
+  margin-bottom: 16px;
+}
+#days {
+  color: var(--color-alert);
+  font-weight: bold;
+  font-size: calc(var(--font-size-body) * 1.414);
+  letter-spacing: 0.1em;
+  margin-left: 10px;
+  margin-right: 10px;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Death Counter</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+
+  <body>
+    <div class="container">
+
+      <div id="top">
+        <h1>Death Counter</h1>
+        <p>Enter the year of your birth and find out how many days you have before <span class="strong">Grim Reaper</span> comes for you.</p>
+        <p>If you dare.</p>
+      </div>
+
+      <div id="main">
+        <input type="number" id="by" placeholder="Year of Birth (yyyy):"><br>
+        <input id="button" type="button" value="Submit" onclick="calc(by)">
+      </div>
+
+      <div id="bottom" class="result hide">
+        <p>You have only <span id="days"></span> days to live.</p>
+        <p id="important">Don't <span class="strong">waste</span> them!</p>
+      </div>
+
+    </div>
+    <script src="./js/jquery-3-4-1.min.js" type="text/javascript"></script>
+    <script src="./js/script.js" type="text/javascript"></script>
+  </body>
+</html>
